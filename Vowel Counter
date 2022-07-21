@@ -1,0 +1,12 @@
+#Python Program to Count the Number of Each Vowel
+number = 0
+word= list(input("Enter your word: "))
+
+vowel= ["a", "e", "i", "o", "u"]
+for x in word:
+    if x in vowel:
+        number += 1
+
+print ("You have ",number, "vowels in your word!")
+
+
