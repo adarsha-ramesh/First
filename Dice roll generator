@@ -1,0 +1,7 @@
+# DICE ROLL GENERATOR
+import random
+
+
+roll1 = random.randrange(1,7)
+roll2 = random.randrange(1, 7)
+print ("Dice value is: ", roll1, "and" , roll2, " and the total number is ", roll1+roll2 )
