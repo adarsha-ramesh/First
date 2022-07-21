@@ -1,0 +1,17 @@
+import random
+
+choice = ["rock", "paper", "scissors"]
+cpu= random.choices(choice)
+
+user_move_uncorrected= input ("Rock, paper or scissors? ")
+user_move = user_move_uncorrected.casefold()
+
+if user_move == choice[0] or user_move == choice[1] or user_move == choice[2] :
+    print(" You chose: ", user_move)
+    print("I chose: ", cpu)
+    if cpu == user_move:
+        print ("You won!")
+    elif cpu != user_move:
+        print ("you lost")
+else:
+        print ("choose right options")
