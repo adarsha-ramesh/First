@@ -1,0 +1,21 @@
+import numpy as np
+import math
+
+
+def fizzbuzz (num):
+    if num == 0:
+        print("**** 0 cannot be divisible!!****")
+
+    elif num % 3 == 0 and num % 5 == 0:
+        print("Fizz-Buzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("buzz")
+    else:
+        print(num)
+
+while True:
+    num = int(input("enter your fizz-buzz number: "))
+    fizzbuzz(num)
+
