@@ -1,0 +1,20 @@
+#print the high frequent letter from sentence
+
+sen = input ("Enter your sentence to know most repeated character:\n")
+sentence = sen.casefold()
+counter ={}
+
+for char in sentence:
+    if char == " ":
+        counter[char] = 0
+    elif char in counter:
+        counter[char] += 1
+    else:
+        counter[char] = 1
+
+counter_sorted_list = sorted(counter.items(), key = lambda key: key[1], reverse = True )
+
+print(counter_sorted_list[0])
+
+
+
