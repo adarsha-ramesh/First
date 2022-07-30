@@ -1,0 +1,17 @@
+#countdown calculator
+import time
+while True:
+    try:
+        countdown = int(input("Enter your countdown timer in sec: \n"))
+
+        if countdown == 0:
+            print("Countdown finished")
+        elif countdown > 0:
+            print("Your countdown starts now!!")
+            while countdown >= 0:
+                time.sleep(1)
+                countdown -= 1
+                print(countdown)
+            print("Time's up!!")
+    except ValueError:
+        print("Only seconds in numbers allowed")
