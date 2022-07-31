@@ -1,0 +1,32 @@
+#tic tac toe game
+itr =9
+a = ["a1", "a2", "a3"]
+b = ["b1", "b2", "b3"]
+c = ["c1", "c2", "c3"]
+
+def grid():
+    print(a)
+    print(b)
+    print(c)
+
+print("Welcome to tic tac toe game! \nThis is your grid positions.\n")
+grid()
+player1 = "x"
+player2 = "o"
+
+position1 = str(input("Player 1 (X) position:"))
+position2 = str(input("Player 2 (O) position:"))
+
+work =
+
+if position1 == "a1" and a[0] != "x" and a[0] != "o":
+    a[0] = "x"
+    grid()
+    itr -= 1
+
+elif position1 == "a2" and a[1] != "x" and a[1] != "o":
+    a[1] = "x"
+    grid()
+    itr -= 1
+else:
+    print("Position Taken!")
