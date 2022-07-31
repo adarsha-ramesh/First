@@ -1,0 +1,25 @@
+#Alarm clock
+
+import time
+import datetime
+
+current_time = datetime.datetime.now()
+current_hour = current_time.hour
+current_minute = current_time.minute
+
+print ("Time now is", current_hour, ":", current_minute)
+
+alarm_time = input("What time would you like to set alarm for [HH:MM]?\n")
+hours, minutes = [int(i) for i in alarm_time.split(":")]
+
+print ("Your alarm at", hours, ":", minutes, " is set!!")
+
+while True:
+    current_time2 = datetime.datetime.now()
+    current_hour2 = current_time2.hour
+    current_minute2 = current_time2.minute
+    if hours == current_hour2 and minutes == current_minute2:
+        print("ALARM")
+        break
+    else:
+        time.sleep(1)
